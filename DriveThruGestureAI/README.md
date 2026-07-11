@@ -13,7 +13,7 @@
 
 ---
 
-# 🇺🇸 English
+
 
 ## 📖 Overview
 
@@ -27,7 +27,7 @@ The application displays the predicted drink together with the confidence score,
 
 ---
 
-# 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## 📖 نبذة عن المشروع
 
@@ -42,7 +42,7 @@ The application displays the predicted drink together with the confidence score,
 
 # 🎥 Demo | العرض التوضيحي
 
-### 🇺🇸 English
+
 
 A demonstration video of the system is included in the project repository.
 
@@ -56,7 +56,7 @@ The video demonstrates the real-time hand gesture recognition process and how ea
 
 ---
 
-### 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 تم إرفاق فيديو توضيحي للمشروع داخل ملفات المشروع.
 
@@ -78,11 +78,11 @@ assets/demo.mp4
 
 <p align="center">
 
-**🇺🇸 English**
+
 
 Live prediction interface displaying the recognized drink and the model confidence score in real time.
 
-**🇸🇦 العربية**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 واجهة التطبيق أثناء التشغيل، حيث يتم عرض اسم المشروب المتوقع ونسبة الثقة مباشرة بعد التعرف على الإيماءة.
 
@@ -91,7 +91,7 @@ Live prediction interface displaying the recognized drink and the model confiden
 
 # ✨ Features | المميزات
 
-## 🇺🇸 English
+
 
 - 🎥 **Real-Time Hand Gesture Recognition** using a webcam.
 - ✋ **MediaPipe Hand Tracking** with 21 hand landmarks.
@@ -104,7 +104,7 @@ Live prediction interface displaying the recognized drink and the model confiden
 
 ---
 
-## 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - 🎥 التعرف على إيماءات اليد في الزمن الحقيقي باستخدام كاميرا الويب.
 - ✋ تتبع اليد واستخراج **21 نقطة مرجعية** باستخدام **MediaPipe**.
@@ -118,7 +118,7 @@ Live prediction interface displaying the recognized drink and the model confiden
 
 # ✋ Supported Gestures | الإيماءات المدعومة
 
-## 🇺🇸 English
+
 
 | Hand Gesture | Drink | Description |
 |--------------|-------|-------------|
@@ -129,7 +129,7 @@ Live prediction interface displaying the recognized drink and the model confiden
 
 ---
 
-## 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 | الإيماءة | المشروب | الوصف |
 |----------|---------|--------|
@@ -141,7 +141,7 @@ Live prediction interface displaying the recognized drink and the model confiden
 
 # 🧠 How It Works | آلية عمل النظام
 
-## 🇺🇸 English
+
 
 The system follows a simple real-time machine learning pipeline:
 
@@ -181,7 +181,7 @@ Display the Result on Screen
 
 ---
 
-## 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 يعتمد النظام على سلسلة من الخطوات لمعالجة الصورة والتنبؤ بالإيماءة في الزمن الحقيقي:
 
@@ -222,7 +222,7 @@ Display the Result on Screen
 
 # 📂 Project Structure | هيكل المشروع
 
-## 🇺🇸 English
+
 
 ```text
 AI-and-Robotics
@@ -261,8 +261,7 @@ AI-and-Robotics
 
 ---
 
-## 🇸🇦 العربية
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```text
 AI-and-Robotics
 │
@@ -301,7 +300,7 @@ AI-and-Robotics
 
 # ⚙️ Installation | التثبيت
 
-## 🇺🇸 English
+
 
 ### 1. Clone the repository
 
@@ -343,7 +342,7 @@ If the camera opens successfully, the installation has been completed correctly.
 
 ---
 
-## 🇸🇦 العربية
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
 
 ### 1. استنساخ المستودع
 
@@ -386,7 +385,7 @@ python scripts/predict.py
 
 # ▶️ Usage | التشغيل
 
-## 🇺🇸 English
+
 
 Run the application:
 
@@ -398,7 +397,7 @@ Show one of the supported hand gestures in front of the webcam. The system will 
 
 ---
 
-## 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 لتشغيل المشروع:
 
@@ -411,7 +410,7 @@ python scripts/predict.py
 
 # 🏋️ Model Training | تدريب النموذج
 
-## 🇺🇸 English
+
 
 After collecting a new dataset, retrain the model using:
 
@@ -423,7 +422,7 @@ The trained model will be saved automatically inside the **models** directory.
 
 ---
 
-## 🇸🇦 العربية
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 بعد جمع بيانات جديدة، يمكن إعادة تدريب النموذج باستخدام:
 
@@ -452,7 +451,7 @@ python scripts/train.py
 - Add a graphical user interface (GUI).
 - Support voice feedback.
 
----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - إضافة إيماءات جديدة.
 - تحسين دقة النموذج.
