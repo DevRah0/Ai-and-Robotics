@@ -49,8 +49,8 @@ A demonstration video of the system is included in the project repository.
 **Location:**
 
 ```text
-[assets/demo.mp4](https://github.com/user-attachments/assets/84bb7e19-eb15-4049-9928-9d15e926d3a2
-)
+https://github.com/user-attachments/assets/84bb7e19-eb15-4049-9928-9d15e926d3a2
+
 ```
 
 The video demonstrates the real-time hand gesture recognition process and how each gesture is translated into a drink selection.
@@ -64,8 +64,8 @@ The video demonstrates the real-time hand gesture recognition process and how ea
 **المسار:**
 
 ```text
-[assets/demo.mp4](https://github.com/user-attachments/assets/84bb7e19-eb15-4049-9928-9d15e926d3a2
-)
+https://github.com/user-attachments/assets/84bb7e19-eb15-4049-9928-9d15e926d3a2
+
 ```
 
 يوضح الفيديو آلية عمل النظام والتعرف على إيماءات اليد في الزمن الحقيقي وتحويلها إلى طلبات مشروبات مختلفة.
