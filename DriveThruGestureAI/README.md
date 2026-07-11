@@ -451,7 +451,6 @@ python scripts/train.py
 - Improve prediction accuracy.
 - Support dynamic gestures.
 - Add a graphical user interface (GUI).
-- Support voice feedback.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -459,7 +458,7 @@ python scripts/train.py
 - تحسين دقة النموذج.
 - دعم الإيماءات الحركية.
 - تطوير واجهة رسومية.
-- إضافة دعم للتغذية الصوتية.
+
   ---
 
 # 👨‍💻 Author
