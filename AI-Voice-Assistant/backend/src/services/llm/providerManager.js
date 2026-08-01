@@ -1,5 +1,5 @@
 const MODELS = require("./models");
-const { askLLM } = require("../llm.service");
+const { askLLM } = require("./providers/openrouter.provider");
 
 async function ask(message) {
 
