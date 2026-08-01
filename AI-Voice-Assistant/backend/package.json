@@ -1,0 +1,29 @@
+{
+  "name": "ai-voice-assistant-backend",
+  "version": "1.0.0",
+  "description": "Backend for AI Voice Assistant Platform",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "voice",
+    "express",
+    "node"
+  ],
+  "author": "Abdulrahman Al-Rubaie",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
