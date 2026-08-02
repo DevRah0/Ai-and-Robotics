@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
-const { ask } = require("../services/llm/providerManager");
+const { ask } = require("../services/pythonClient");
 
 router.post("/", async (req, res) => {
 
