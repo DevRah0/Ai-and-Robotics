@@ -9,12 +9,15 @@ class VoiceService:
         self.chat_service = ChatService()
         self.tts_service = TTSService()
 
-    async def process_voice(self, audio_file):
+    async def process_voice(self, session_id: str, audio_file):
         # 1. تحويل الصوت إلى نص
         text = await self.speech_service.transcribe(audio_file)
 
         # 2. إرسال النص إلى نموذج الذكاء الاصطناعي
-        reply = await self.chat_service.generate_reply(text)
+        reply = await self.chat_service.generate_reply(
+            session_id,
+            text
+        )
 
         # 3. تحويل الرد إلى صوت
         audio_path = self.tts_service.synthesize(reply)

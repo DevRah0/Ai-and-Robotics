@@ -1,14 +1,13 @@
 from fastapi import APIRouter, UploadFile, File, Form
 from app.services.voice_service import VoiceService
-from fastapi.responses import FileResponse
 
 router = APIRouter()
 
 voice_service = VoiceService()
 
 
-@router.post("/voice-chat")
-async def voice_chat(
+@router.post("/voice-chat-json")
+async def voice_chat_json(
     session_id: str = Form(...),
     file: UploadFile = File(...)
 ):
@@ -17,8 +16,4 @@ async def voice_chat(
         file
     )
 
-    return FileResponse(
-        path=result["audio_path"],
-        media_type="audio/wav",
-        filename="response.wav"
-    )
+    return result

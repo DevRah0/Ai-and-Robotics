@@ -1,12 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const { ask } = require("../services/pythonClient");
+
+const {
+    ask,
+    askStream
+} = require("../services/pythonClient");
 
 router.post("/", async (req, res) => {
 
     try {
 
-        const { message } = req.body;
+        const { session_id, message } = req.body;
 
         if (!message) {
             return res.status(400).json({
@@ -14,7 +18,10 @@ router.post("/", async (req, res) => {
             });
         }
 
-        const reply = await ask(message);
+        const reply = await ask(
+            session_id || "default-session",
+            message
+        );
 
         res.json({
             reply
@@ -31,5 +38,33 @@ router.post("/", async (req, res) => {
     }
 
 });
+
+
+router.post("/stream", async (req, res) => {
+
+    try {
+
+        const { session_id, message } = req.body;
+
+        const stream = await askStream(
+            session_id || "default-session",
+            message
+        );
+
+        res.setHeader("Content-Type", "text/plain; charset=utf-8");
+        res.setHeader("Transfer-Encoding", "chunked");
+
+        stream.pipe(res);
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).end();
+
+    }
+
+});
+
 
 module.exports = router;
