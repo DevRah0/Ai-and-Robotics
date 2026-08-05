@@ -1,5 +1,5 @@
 {
-  "name": "ai-voice-assistant-backend",
+  "name": "ai-voice-platform-backend",
   "version": "1.0.0",
   "description": "Backend for AI Voice Assistant Platform",
   "main": "src/server.js",
