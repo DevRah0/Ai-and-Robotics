@@ -46,16 +46,9 @@ A window with a **Start Recording** button. Press it, speak, press again, and th
 
 ## 📸 Screenshots | لقطات الشاشة
 
-> Place your screenshots inside `screenshots/` and reference them here, e.g.:
 
 ```
-screenshots/app.png
-```
-
-> ضع لقطات الشاشة داخل مجلد `screenshots/` واربطها هنا، مثل:
-
-```
-screenshots/app.png
+screenshots/app.bmp
 ```
 
 ---
