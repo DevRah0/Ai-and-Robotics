@@ -8,7 +8,7 @@ Speak → Whisper (speech-to-text) → Gemini API (AI response) → gTTS (text-t
 
 ---
 
-## 🙋 Overview | نظرة عامة
+## 🙋‍♂️ Overview | نظرة عامة
 
 A window with a **Start Recording** button. Press it, speak, press again, and the app:
 1. Records your microphone.
@@ -85,7 +85,7 @@ screenshots/app.png
 ### 2) Create a virtual environment | أنشئ بيئة افتراضية
 
 ```bash
-cd projects/voice-assistant
+cd VoiceAssistant
 python -m venv venv
 # Windows:  venv\Scripts\activate
 # Linux/mac: source venv/bin/activate
@@ -127,7 +127,7 @@ python main.py
 ## 📁 Project Structure | هيكل المشروع
 
 ```
-projects/voice-assistant/
+VoiceAssistant/
 ├── main.py
 ├── requirements.txt
 ├── README.md

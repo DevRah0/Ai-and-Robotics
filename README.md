@@ -18,7 +18,7 @@ AI-and-Robotics
 │   ├── scripts
 │   └── requirements.txt
 │
-├── projects/voice-assistant/
+├── VoiceAssistant/
 │   ├── main.py
 │   ├── requirements.txt
 │   └── README.md
