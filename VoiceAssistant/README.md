@@ -46,10 +46,10 @@ A window with a **Start Recording** button. Press it, speak, press again, and th
 
 ## 📸 Screenshots | لقطات الشاشة
 
-
-```
 ![Voice Assistant](screenshots/app.png)
-```
+
+
+
 
 ---
 
