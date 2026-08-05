@@ -48,7 +48,7 @@ A window with a **Start Recording** button. Press it, speak, press again, and th
 
 
 ```
-![Voice Assistant](screenshots/app.bmp)
+![Voice Assistant](screenshots/app.png)
 ```
 
 ---
