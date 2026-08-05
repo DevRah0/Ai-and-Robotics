@@ -1,0 +1,16 @@
+# Core
+openai-whisper>=20231117
+# Google Gemini (official new SDK; google-generativeai is deprecated)
+google-genai>=1.0.0
+# Text-to-speech
+gTTS>=2.5.0
+# Audio playback
+pygame>=2.5.0
+# Environment variables
+python-dotenv>=1.0.0
+# Audio capture
+sounddevice>=0.4.6
+# Audio file writing (WAV)
+scipy>=1.11.0
+# Whisper models depend on numpy (torch is installed separately)
+numpy>=1.24.0

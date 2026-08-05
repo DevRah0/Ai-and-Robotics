@@ -18,6 +18,11 @@ AI-and-Robotics
 │   ├── scripts
 │   └── requirements.txt
 │
+├── projects/voice-assistant/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── Project2
 │
 ├── Project3
@@ -32,6 +37,7 @@ AI-and-Robotics
 | Project | Description | Status |
 |---------|-------------|--------|
 | 🚗 DriveThru Gesture AI | Real-time hand gesture recognition system for drive-thru ordering using MediaPipe and Machine Learning. | ✅ Completed |
+| 🎤 Voice Assistant | Desktop voice assistant with Tkinter: Whisper (speech-to-text) → Gemini API → gTTS (text-to-speech) → pygame playback. | ✅ Completed |
 
 More projects will be added as the track progresses.
 
