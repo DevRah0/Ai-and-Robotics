@@ -37,11 +37,13 @@ RECORDING = "recording"
 PROCESSING = "processing"
 
 
+import importlib
+
 def _safe_import(module_name):
     """Import a module lazily; return None instead of raising."""
     try:
-        return __import__(module_name)
-    except Exception:  # noqa: BLE001 - an import failure is treated as missing
+        return importlib.import_module(module_name)
+    except Exception:
         return None
 
 
@@ -200,7 +202,7 @@ class VoiceAssistantApp:
             self._append_text(self.you_text, transcript)
 
             self._set_status("Generating response…")
-            reply = self._ask_gemini(transcript)
+            reply = self._ask_openrouter(transcript)
             self._append_text(self.ai_text, reply)
 
             self._set_status("Playing response…")
@@ -256,28 +258,48 @@ class VoiceAssistantApp:
             self._status_error("Error", f"Whisper failed: {exc}")
             return ""
 
-    # -------------------------------------------------------- gemini
-    def _ask_gemini(self, prompt: str) -> str:
-        if not API_KEY:
-            return (
-                "Error: API key missing.\n\n"
-                "1. Copy .env.example to .env\n"
-                "2. Set GEMINI_API_KEY=<your key>\n"
-                "3. Restart the app."
-            )
+        # -------------------------------------------------------- OpenRouter
+    def _ask_openrouter(self, prompt: str) -> str:
+        from openai import OpenAI
 
-        genai = _safe_import("google.genai")
-        if genai is None:
-            return "Error: install google-genai (see requirements.txt)."
+        api_key = os.getenv("OPENROUTER_API_KEY", "").strip()
+
+        if not api_key:
+            return "Error: OPENROUTER_API_KEY not found in .env"
 
         try:
-            client = genai.Client(api_key=API_KEY)
-            response = client.models.generate_content(
-                model="gemini-2.0-flash", contents=prompt
+            client = OpenAI(
+                api_key=api_key,
+                base_url="https://openrouter.ai/api/v1",
             )
-            return (response.text or "").strip() or "(Empty response)"
-        except Exception as exc:  # noqa: BLE001
-            return f"Gemini error: {exc}"
+            
+            print("Sending request to OpenRouter...")
+
+            response = client.chat.completions.create(
+                model="openai/gpt-oss-20b:free",
+                messages=[
+                     {
+                            "role": "user",
+                           "content": prompt,
+        }
+    ],
+)
+
+            print(response)
+            response = client.chat.completions.create(
+                model="openai/gpt-oss-20b:free",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt,
+                    }
+                ],
+            )
+
+            return response.choices[0].message.content.strip()
+
+        except Exception as e:
+            return f"OpenRouter Error: {e}"
 
     # --------------------------------------------------------- TTS + play
     def _play_audio(self, text: str) -> None:
@@ -289,7 +311,8 @@ class VoiceAssistantApp:
 
         mp3_path = None
         try:
-            tts = gTTS(text=text, lang="en")
+            lang = "ar" if any("\u0600" <= ch <= "\u06FF" for ch in text) else "en"
+            tts = gTTS(text=text, lang=lang)
             with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
                 mp3_path = tmp.name
             tts.save(mp3_path)
@@ -298,6 +321,7 @@ class VoiceAssistantApp:
             return
 
         try:
+            print("MP3 created:", mp3_path)
             self._play_mp3(mp3_path)
         finally:
             if mp3_path and os.path.exists(mp3_path):
@@ -316,6 +340,7 @@ class VoiceAssistantApp:
             if self._pygame is None:
                 pygame.mixer.init()
                 self._pygame = pygame
+                print("Playing:", path)
             pygame.mixer.music.load(path)
             pygame.mixer.music.play()
             while pygame.mixer.music.get_busy():
