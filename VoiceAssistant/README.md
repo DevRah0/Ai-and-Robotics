@@ -81,14 +81,22 @@ screenshots/app.png
 
 - **Python 3.11+**
 - A working microphone + speakers.
+- (Windows) `Microsoft Visual C++ Redistributable` if needed for sounddevice.
 
 ### 2) Create a virtual environment | أنشئ بيئة افتراضية
 
+**Windows (PowerShell):**
+```powershell
+cd VoiceAssistant
+python -m venv venv
+venv\Scripts\Activate.ps1
+```
+
+**Linux / macOS:**
 ```bash
 cd VoiceAssistant
 python -m venv venv
-# Windows:  venv\Scripts\activate
-# Linux/mac: source venv/bin/activate
+source venv/bin/activate
 ```
 
 ### 3) Install dependencies | ثبّت المتطلبات
@@ -101,9 +109,16 @@ pip install torch
 
 ### 4) Configure the API key | اضبط مفتاح API
 
+**Windows (PowerShell):**
+```powershell
+Copy-Item .env.example .env
+# Then open .env and set: GEMINI_API_KEY=your API key here
+```
+
+**Linux/macOS:**
 ```bash
 cp .env.example .env
-# Open .env and set: GEMINI_API_KEY=your API key here
+# Then open .env and set: GEMINI_API_KEY=your API key here
 ```
 
 > 🔒 The real `.env` is git-ignored and never committed.
@@ -162,7 +177,7 @@ Status transitions: **Ready → Recording… → Processing… → Generating re
 | `Microphone unavailable` | Connect a mic; check OS privacy/input settings. |
 | `Whisper failed` | Install `torch` and model downloads; retry. |
 | `Gemini error` | Check internet + that `GEMINI_API_KEY` is set in `.env`. |
-| `API key is missing` | `cp .env.example .env` and fill the key. |
+| `API key is missing` | Create `.env` from `.env.example` (Windows: `Copy-Item`, Linux/mac: `cp`) and fill the key. |
 | No audio plays | Install `pygame`; check volume/speakers. |
 
 ---
