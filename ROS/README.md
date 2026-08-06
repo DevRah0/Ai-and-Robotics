@@ -1,146 +1,182 @@
 # ROS 2 Humble on Ubuntu 22.04 (WSL2)
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
-![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros&logoColor=white)
-![WSL2](https://img.shields.io/badge/WSL-2-4D4D4D?logo=windows-terminal&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![WSL2](https://img.shields.io/badge/WSL2-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 ---
 
-## 📖 Project Overview | نظرة عامة
+# 📖 Overview
 
-This project demonstrates the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** using **Windows Subsystem for Linux (WSL2)**.
+This repository documents the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** running through **Windows Subsystem for Linux 2 (WSL2)**.
 
-يوضح هذا المشروع خطوات تثبيت والتحقق من تشغيل **ROS 2 Humble Hawksbill** على **Ubuntu 22.04 LTS** باستخدام **WSL2** على نظام Windows.
-
----
-
-## 🎯 Project Objective | هدف المشروع
-
-- Install Ubuntu 22.04 using WSL2.
-- تثبيت Ubuntu 22.04 باستخدام WSL2.
-
-- Install ROS 2 Humble.
-- تثبيت ROS 2 Humble.
-
-- Verify successful installation using the official ROS 2 demo nodes.
-- التحقق من نجاح التثبيت باستخدام العقد التجريبية الرسمية.
+The installation was successfully verified by running the official ROS 2 demo nodes (`talker` and `listener`) and confirming communication between Publisher and Subscriber nodes.
 
 ---
 
-## ✨ Features | المميزات
+# 🎯 Objectives
 
-- Ubuntu 22.04 LTS Environment.
-- بيئة Ubuntu 22.04 LTS.
-
-- ROS 2 Humble Installation.
-- تثبيت ROS 2 Humble.
-
-- Demo Nodes Verification.
-- اختبار العقد التجريبية.
-
-- Publisher / Subscriber Communication.
-- اختبار التواصل بين الناشر والمشترك.
-
-- WSL2 Integration.
-- التشغيل باستخدام WSL2.
+- Install Ubuntu 22.04 LTS using WSL2.
+- Install ROS 2 Humble Hawksbill.
+- Configure the ROS environment.
+- Verify the installation using the official demo nodes.
+- Test Publisher / Subscriber communication.
 
 ---
 
-## 🛠 Technologies Used | التقنيات المستخدمة
+# 🖥️ Environment
+
+| Component | Version |
+|-----------|----------|
+| Operating System | Windows 10 |
+| Linux Distribution | Ubuntu 22.04 LTS |
+| Platform | WSL2 |
+| ROS Version | ROS 2 Humble Hawksbill |
+
+---
+
+# 🛠️ Technologies
 
 - Ubuntu 22.04 LTS
 - Windows Subsystem for Linux 2 (WSL2)
-- ROS 2 Humble Hawksbill
-- C++
+- ROS 2 Humble
 - Python
+- C++
 - Ubuntu Terminal
 
 ---
 
-## 📂 Project Structure | هيكل المشروع
+# 📂 Project Structure
 
 ```text
 ROS2-Humble/
 │
 ├── README.md
-├── screenshots/
-│   ├── ubuntu-install.png
-│   ├── ros-environment.png
-│   ├── talker.png
-│   ├── listener.png
-│   └── communication.png
 │
-└── docs/
-    └── installation-notes.md
+└── screenshots/
+    ├── 1.bmp
+    ├── 2.bmp
+    ├── 3.bmp
+    └── 4.bmp
 ```
 
 ---
 
-## 🚀 Verification | التحقق من التثبيت
+# 🚀 Installation Process
 
-Check the installed ROS distribution:
+## 1. Update Ubuntu
+
+Update all packages before installing ROS 2.
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+
+<p align="center">
+  <img src="screenshots/1.bmp" width="950">
+</p>
+
+---
+
+## 2. Install ROS 2 Humble
+
+Configure the ROS 2 repository and install ROS 2 Humble.
+
+```bash
+sudo apt install ros-humble-desktop
+```
+
+<p align="center">
+  <img src="screenshots/3.bmp" width="950">
+</p>
+
+---
+
+## 3. Configure the Environment
+
+Load the ROS environment.
+
+```bash
+source /opt/ros/humble/setup.bash
+```
+
+Verify the installed ROS version.
 
 ```bash
 echo $ROS_DISTRO
 ```
 
-Expected Output:
+Expected output:
 
 ```text
 humble
 ```
 
-Run the Publisher:
+<p align="center">
+  <img src="screenshots/2.bmp" width="950">
+</p>
+
+---
+
+## 4. Verify ROS 2
+
+Run the Publisher node.
 
 ```bash
 ros2 run demo_nodes_cpp talker
 ```
 
-Run the Subscriber:
+Open another terminal and run the Subscriber node.
 
 ```bash
 ros2 run demo_nodes_py listener
 ```
 
-Successful communication confirms that the ROS 2 environment is working correctly.
+If the installation is successful, the listener will receive messages similar to:
 
-يؤكد تبادل الرسائل بين العقدتين نجاح عملية التثبيت وعمل بيئة ROS 2 بشكل صحيح.
+```text
+I heard: [Hello World: 1]
+I heard: [Hello World: 2]
+...
+```
 
----
-
-## 📸 Screenshots | لقطات الشاشة
-
-- Ubuntu 22.04 Installation
-- ROS 2 Environment
-- Talker Node
-- Listener Node
-- Publisher / Subscriber Communication
+<p align="center">
+  <img src="screenshots/4.bmp" width="1000">
+</p>
 
 ---
 
-## 📚 Learning Outcomes | ما تم تعلمه
+# ✅ Result
 
-- Installing Ubuntu using WSL2.
-- تثبيت Ubuntu باستخدام WSL2.
+The installation and configuration of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS (WSL2)** were completed successfully.
 
-- Installing and configuring ROS 2 Humble.
-- تثبيت وإعداد ROS 2 Humble.
-
-- Running ROS 2 demo applications.
-- تشغيل التطبيقات التجريبية.
-
-- Understanding Publisher and Subscriber communication.
-- فهم آلية التواصل بين Publisher و Subscriber.
+The communication between the **Talker** and **Listener** demo nodes confirmed that the ROS 2 environment is working correctly.
 
 ---
 
-## 📄 License | الترخيص
+# 📚 Learning Outcomes
 
-This project is created for educational purposes.
-
-تم إنشاء هذا المشروع لأغراض تعليمية فقط.
+- Install Ubuntu using WSL2.
+- Install ROS 2 Humble.
+- Configure the ROS environment.
+- Execute ROS 2 commands.
+- Understand Publisher / Subscriber communication.
+- Verify successful ROS 2 installation.
 
 ---
 
-Developed by **Abdulrahman Al-Rubaie** © 2026
+# 📄 License
+
+This repository is intended for educational purposes only.
+
+---
+
+<div align="center">
+
+### Developed by Abdulrahman Al-Rubaie
+
+Computer Engineering Student • ROS 2 Learner • Robotics Enthusiast
+
+</div>
