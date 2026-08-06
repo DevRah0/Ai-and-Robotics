@@ -55,10 +55,10 @@ ROS2-Humble/
 ├── README.md
 │
 └── screenshots/
-    ├── 1.bmp
-    ├── 2.bmp
-    ├── 3.bmp
-    └── 4.bmp
+    ├── 1.png
+    ├── 2.png
+    ├── 3.png
+    └── 4.png
 ```
 
 ---
