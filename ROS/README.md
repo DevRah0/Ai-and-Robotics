@@ -9,19 +9,28 @@
 
 # 📖 Overview
 
-This repository documents the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** running through **Windows Subsystem for Linux 2 (WSL2)**.
+This repository demonstrates the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** using **Windows Subsystem for Linux 2 (WSL2)**.
 
-The installation was successfully verified by running the official ROS 2 demo nodes (`talker` and `listener`) and confirming communication between Publisher and Subscriber nodes.
+يوضح هذا المستودع خطوات تثبيت والتحقق من تشغيل **ROS 2 Humble Hawksbill** على **Ubuntu 22.04 LTS** باستخدام **WSL2**.
 
 ---
 
 # 🎯 Objectives
 
-- Install Ubuntu 22.04 LTS using WSL2.
-- Install ROS 2 Humble Hawksbill.
+- Install Ubuntu 22.04 using WSL2.
+- تثبيت Ubuntu 22.04 باستخدام WSL2.
+
+- Install ROS 2 Humble.
+- تثبيت ROS 2 Humble.
+
 - Configure the ROS environment.
-- Verify the installation using the official demo nodes.
-- Test Publisher / Subscriber communication.
+- إعداد بيئة ROS.
+
+- Verify the installation.
+- التحقق من نجاح التثبيت.
+
+- Test Publisher and Subscriber communication.
+- اختبار التواصل بين Publisher و Subscriber.
 
 ---
 
@@ -40,7 +49,7 @@ The installation was successfully verified by running the official ROS 2 demo no
 
 - Ubuntu 22.04 LTS
 - Windows Subsystem for Linux 2 (WSL2)
-- ROS 2 Humble
+- ROS 2 Humble Hawksbill
 - Python
 - C++
 - Ubuntu Terminal
@@ -53,7 +62,6 @@ The installation was successfully verified by running the official ROS 2 demo no
 ROS2-Humble/
 │
 ├── README.md
-│
 └── screenshots/
     ├── 1.png
     ├── 2.png
@@ -65,9 +73,11 @@ ROS2-Humble/
 
 # 🚀 Installation Process
 
-## 1. Update Ubuntu
+### 1️⃣ Update Ubuntu
 
-Update all packages before installing ROS 2.
+Update the system packages before installing ROS 2.
+
+تحديث حزم النظام قبل تثبيت ROS 2.
 
 ```bash
 sudo apt update
@@ -75,36 +85,35 @@ sudo apt upgrade -y
 ```
 
 <p align="center">
-  <img src="screenshots/1.png" width="950">
+<img src="screenshots/1.png" width="900">
 </p>
 
 ---
 
-## 2. Install ROS 2 Humble
+### 2️⃣ Install ROS 2 Humble
 
-Configure the ROS 2 repository and install ROS 2 Humble.
+Install ROS 2 Humble and configure the official repository.
+
+تثبيت ROS 2 Humble وإعداد المستودع الرسمي.
 
 ```bash
 sudo apt install ros-humble-desktop
 ```
 
 <p align="center">
-  <img src="screenshots/3.png" width="950">
+<img src="screenshots/3.png" width="900">
 </p>
 
 ---
 
-## 3. Configure the Environment
+### 3️⃣ Configure ROS Environment
 
-Load the ROS environment.
+Load the ROS environment and verify the installation.
+
+تحميل بيئة ROS والتحقق من نجاح التثبيت.
 
 ```bash
 source /opt/ros/humble/setup.bash
-```
-
-Verify the installed ROS version.
-
-```bash
 echo $ROS_DISTRO
 ```
 
@@ -115,68 +124,73 @@ humble
 ```
 
 <p align="center">
-  <img src="screenshots/2.png" width="950">
+<img src="screenshots/2.png" width="900">
 </p>
 
 ---
 
-## 4. Verify ROS 2
+### 4️⃣ Communication Test
 
-Run the Publisher node.
+Run the Publisher and Subscriber demo nodes to verify successful communication.
+
+تشغيل عقدتي Publisher و Subscriber للتأكد من نجاح التواصل.
 
 ```bash
 ros2 run demo_nodes_cpp talker
 ```
 
-Open another terminal and run the Subscriber node.
-
 ```bash
 ros2 run demo_nodes_py listener
 ```
 
-If the installation is successful, the listener will receive messages similar to:
-
-```text
-I heard: [Hello World: 1]
-I heard: [Hello World: 2]
-...
-```
-
 <p align="center">
-  <img src="screenshots/4.png" width="1000">
+<img src="screenshots/4.png" width="1000">
 </p>
 
 ---
 
 # ✅ Result
 
-The installation and configuration of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS (WSL2)** were completed successfully.
+ROS 2 Humble was successfully installed and configured on Ubuntu 22.04 using WSL2.
 
-The communication between the **Talker** and **Listener** demo nodes confirmed that the ROS 2 environment is working correctly.
+تم تثبيت وإعداد ROS 2 Humble بنجاح على Ubuntu 22.04 باستخدام WSL2.
+
+Communication between the Talker and Listener nodes confirmed that the ROS environment is working correctly.
+
+أكد التواصل بين عقدتي Talker و Listener أن بيئة ROS تعمل بالشكل الصحيح.
 
 ---
 
 # 📚 Learning Outcomes
 
-- Install Ubuntu using WSL2.
-- Install ROS 2 Humble.
-- Configure the ROS environment.
-- Execute ROS 2 commands.
-- Understand Publisher / Subscriber communication.
-- Verify successful ROS 2 installation.
+- Ubuntu installation using WSL2.
+- تثبيت Ubuntu باستخدام WSL2.
+
+- ROS 2 installation and configuration.
+- تثبيت وإعداد ROS 2.
+
+- Running ROS nodes.
+- تشغيل عقد ROS.
+
+- Publisher and Subscriber communication.
+- فهم آلية التواصل بين Publisher و Subscriber.
 
 ---
 
 # 📄 License
 
-This repository is intended for educational purposes only.
+This project is intended for educational purposes only.
+
+تم إنشاء هذا المشروع للأغراض التعليمية فقط.
 
 ---
 
 <div align="center">
 
-### Developed by Abdulrahman Al-Rubaie
+### 👨‍💻 Abdulrahman Al-Rubaie
 
-Computer Engineering Student • ROS 2 Learner • Robotics Enthusiast
+Computer Engineering Student • Robotics Enthusiast
+
+طالب هندسة حاسب مهتم بالروبوتات وتقنيات ROS
 
 </div>
