@@ -1,107 +1,146 @@
-# ROS 2 Humble Installation on Ubuntu 22.04 (WSL2)
+# ROS 2 Humble on Ubuntu 22.04 (WSL2)
 
-## 📌 Overview
-
-This repository documents the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** running through **Windows Subsystem for Linux 2 (WSL2)**.
-
-The installation was successfully verified using the official ROS 2 demo nodes (`talker` and `listener`).
-
----
-
-## 🖥️ Environment
-
-| Component | Version |
-|----------|---------|
-| Operating System | Windows 10 |
-| Linux Distribution | Ubuntu 22.04 LTS |
-| Platform | WSL2 |
-| ROS Version | ROS 2 Humble Hawksbill |
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
+![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros&logoColor=white)
+![WSL2](https://img.shields.io/badge/WSL-2-4D4D4D?logo=windows-terminal&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
-## 🚀 Installation
+## 📖 Project Overview | نظرة عامة
 
-Update the system:
+This project demonstrates the installation and verification of **ROS 2 Humble Hawksbill** on **Ubuntu 22.04 LTS** using **Windows Subsystem for Linux (WSL2)**.
 
-```bash
-sudo apt update
-sudo apt upgrade -y
+يوضح هذا المشروع خطوات تثبيت والتحقق من تشغيل **ROS 2 Humble Hawksbill** على **Ubuntu 22.04 LTS** باستخدام **WSL2** على نظام Windows.
+
+---
+
+## 🎯 Project Objective | هدف المشروع
+
+- Install Ubuntu 22.04 using WSL2.
+- تثبيت Ubuntu 22.04 باستخدام WSL2.
+
+- Install ROS 2 Humble.
+- تثبيت ROS 2 Humble.
+
+- Verify successful installation using the official ROS 2 demo nodes.
+- التحقق من نجاح التثبيت باستخدام العقد التجريبية الرسمية.
+
+---
+
+## ✨ Features | المميزات
+
+- Ubuntu 22.04 LTS Environment.
+- بيئة Ubuntu 22.04 LTS.
+
+- ROS 2 Humble Installation.
+- تثبيت ROS 2 Humble.
+
+- Demo Nodes Verification.
+- اختبار العقد التجريبية.
+
+- Publisher / Subscriber Communication.
+- اختبار التواصل بين الناشر والمشترك.
+
+- WSL2 Integration.
+- التشغيل باستخدام WSL2.
+
+---
+
+## 🛠 Technologies Used | التقنيات المستخدمة
+
+- Ubuntu 22.04 LTS
+- Windows Subsystem for Linux 2 (WSL2)
+- ROS 2 Humble Hawksbill
+- C++
+- Python
+- Ubuntu Terminal
+
+---
+
+## 📂 Project Structure | هيكل المشروع
+
+```text
+ROS2-Humble/
+│
+├── README.md
+├── screenshots/
+│   ├── ubuntu-install.png
+│   ├── ros-environment.png
+│   ├── talker.png
+│   ├── listener.png
+│   └── communication.png
+│
+└── docs/
+    └── installation-notes.md
 ```
 
-Install ROS 2 Humble by following the official ROS 2 installation guide.
+---
 
-Source the ROS environment:
+## 🚀 Verification | التحقق من التثبيت
 
-```bash
-source /opt/ros/humble/setup.bash
-```
-
-Verify the installation:
+Check the installed ROS distribution:
 
 ```bash
 echo $ROS_DISTRO
 ```
 
-Expected output:
+Expected Output:
 
 ```text
 humble
 ```
 
----
-
-## ✅ Verification
-
-Run the Talker node:
+Run the Publisher:
 
 ```bash
 ros2 run demo_nodes_cpp talker
 ```
 
-Open another terminal and run the Listener node:
+Run the Subscriber:
 
 ```bash
 ros2 run demo_nodes_py listener
 ```
 
-If the installation is successful, the Listener will receive messages similar to:
+Successful communication confirms that the ROS 2 environment is working correctly.
 
-```text
-I heard: [Hello World: 1]
-I heard: [Hello World: 2]
-...
-```
+يؤكد تبادل الرسائل بين العقدتين نجاح عملية التثبيت وعمل بيئة ROS 2 بشكل صحيح.
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshots | لقطات الشاشة
 
-Screenshots demonstrating:
-
-- Ubuntu 22.04 installation
-- ROS 2 Humble environment
-- Talker node
-- Listener node
-- Successful communication between nodes
+- Ubuntu 22.04 Installation
+- ROS 2 Environment
+- Talker Node
+- Listener Node
+- Publisher / Subscriber Communication
 
 ---
 
-## 📚 Technologies Used
+## 📚 Learning Outcomes | ما تم تعلمه
 
-- Ubuntu 22.04 LTS
-- WSL2
-- ROS 2 Humble
-- C++
-- Python
+- Installing Ubuntu using WSL2.
+- تثبيت Ubuntu باستخدام WSL2.
+
+- Installing and configuring ROS 2 Humble.
+- تثبيت وإعداد ROS 2 Humble.
+
+- Running ROS 2 demo applications.
+- تشغيل التطبيقات التجريبية.
+
+- Understanding Publisher and Subscriber communication.
+- فهم آلية التواصل بين Publisher و Subscriber.
 
 ---
 
-## 🎯 Result
+## 📄 License | الترخيص
 
-ROS 2 Humble was successfully installed and configured on Ubuntu 22.04 running under WSL2. Communication between the Talker and Listener demo nodes confirmed that the installation and environment setup were completed successfully.
+This project is created for educational purposes.
+
+تم إنشاء هذا المشروع لأغراض تعليمية فقط.
 
 ---
 
-## 📄 License
-
-This repository is created for educational purposes.
+Developed by **Abdulrahman Al-Rubaie** © 2026
