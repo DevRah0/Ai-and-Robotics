@@ -75,7 +75,7 @@ sudo apt upgrade -y
 ```
 
 <p align="center">
-  <img src="screenshots/1.bmp" width="950">
+  <img src="screenshots/1.png" width="950">
 </p>
 
 ---
@@ -89,7 +89,7 @@ sudo apt install ros-humble-desktop
 ```
 
 <p align="center">
-  <img src="screenshots/3.bmp" width="950">
+  <img src="screenshots/3.png" width="950">
 </p>
 
 ---
@@ -115,7 +115,7 @@ humble
 ```
 
 <p align="center">
-  <img src="screenshots/2.bmp" width="950">
+  <img src="screenshots/2.png" width="950">
 </p>
 
 ---
@@ -143,7 +143,7 @@ I heard: [Hello World: 2]
 ```
 
 <p align="center">
-  <img src="screenshots/4.bmp" width="1000">
+  <img src="screenshots/4.png" width="1000">
 </p>
 
 ---
