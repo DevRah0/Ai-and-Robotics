@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		E6EB9F08212AD701C4EEC985 /* PBXFileReference_Routes.swift */ = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = Routes.swift;
+            sourceTree = "<group>";
+        };
+        76F200A0729EE393D3EEA432 /* PBXBuildFile_Routes.swift */ = {
+            isa = PBXBuildFile;
+            fileRef = E6EB9F08212AD701C4EEC985 /* Routes.swift */;
+        };
+		98B2072DB73B873F57E86CA4 /* PBXFileReference_RoutesView.swift */ = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = RoutesView.swift;
+            sourceTree = "<group>";
+        };
+        E66667263A94EE999F879176 /* PBXBuildFile_RoutesView.swift */ = {
+            isa = PBXBuildFile;
+            fileRef = 98B2072DB73B873F57E86CA4 /* RoutesView.swift */;
+        };
+		62ADBA23B81B4EBA84A7E2B6 /* PBXFileReference_GPXDocument.swift */ = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = GPXDocument.swift;
+            sourceTree = "<group>";
+        };
+        525128AB49CC8CAFEC1C779B /* PBXBuildFile_GPXDocument.swift */ = {
+            isa = PBXBuildFile;
+            fileRef = 62ADBA23B81B4EBA84A7E2B6 /* GPXDocument.swift */;
+        };
+		403E88B4A90699C00EEA6A34 /* PBXFileReference_AppModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppModel.swift;
+			sourceTree = "<group>";
+		};
+		8C3CACE923F976291CDC6893 /* PBXBuildFile_AppModel.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 403E88B4A90699C00EEA6A34 /* AppModel.swift */;
+		};
+		9526182CCCDE7129D6A9B984 /* PBXFileReference_Components.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Components.swift;
+			sourceTree = "<group>";
+		};
+		5AAFC5604A2EE6B8CD9848A4 /* PBXBuildFile_Components.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 9526182CCCDE7129D6A9B984 /* Components.swift */;
+		};
+		C672FF59A0F5D595BC0EACBF /* PBXFileReference_DiagnosticsView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = DiagnosticsView.swift;
+			sourceTree = "<group>";
+		};
+		2E7FF4B2B3A4C397230572FC /* PBXBuildFile_DiagnosticsView.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = C672FF59A0F5D595BC0EACBF /* DiagnosticsView.swift */;
+		};
+		0482B7F6F9291FA868BEFC6D /* PBXFileReference_FavoritesView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = FavoritesView.swift;
+			sourceTree = "<group>";
+		};
+		2845FCBDA5E16588AA11DAC0 /* PBXBuildFile_FavoritesView.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 0482B7F6F9291FA868BEFC6D /* FavoritesView.swift */;
+		};
+		6BDF765405DB193D091E5C47 /* PBXFileReference_GeoLabApp.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = GeoLabApp.swift;
+			sourceTree = "<group>";
+		};
+		050F3571E7D45874194838AD /* PBXBuildFile_GeoLabApp.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 6BDF765405DB193D091E5C47 /* GeoLabApp.swift */;
+		};
+		C3EF2F842B4B5168EC4C1F19 /* PBXFileReference_GeoMapView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = GeoMapView.swift;
+			sourceTree = "<group>";
+		};
+		FD6581B3517C5150258FE5B3 /* PBXBuildFile_GeoMapView.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = C3EF2F842B4B5168EC4C1F19 /* GeoMapView.swift */;
+		};
+		F6E79682AEC250E700582AF1 /* PBXFileReference_LocationService.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = LocationService.swift;
+			sourceTree = "<group>";
+		};
+		29BE544ADEA540B878C1A409 /* PBXBuildFile_LocationService.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = F6E79682AEC250E700582AF1 /* LocationService.swift */;
+		};
+		A3A4CA52C512A33D8A37A31F /* PBXFileReference_Models.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Models.swift;
+			sourceTree = "<group>";
+		};
+		7948402356D47C29ADEB4409 /* PBXBuildFile_Models.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = A3A4CA52C512A33D8A37A31F /* Models.swift */;
+		};
+		9F7104BF3D9B877678F1FC16 /* PBXFileReference_SearchView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = SearchView.swift;
+			sourceTree = "<group>";
+		};
+		28C27FF2D28868AD83F523AD /* PBXBuildFile_SearchView.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 9F7104BF3D9B877678F1FC16 /* SearchView.swift */;
+		};
+		197BD50E2686EA11E571EC20 /* PBXFileReference_SettingsView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = SettingsView.swift;
+			sourceTree = "<group>";
+		};
+		87703538261691DD3DD7E624 /* PBXBuildFile_SettingsView.swift */ = {
+			isa = PBXBuildFile;
+			fileRef = 197BD50E2686EA11E571EC20 /* SettingsView.swift */;
+		};
+		022E8DC6E527B2BEE97F7BD0 /* PBXFileReference_GeoLab_app */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = GeoLab.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1975FFFEC7AAD43CB4BA5649 /* PBXGroup_geo */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB9F08212AD701C4EEC985 /* Routes.swift */,
+				98B2072DB73B873F57E86CA4 /* RoutesView.swift */,
+				62ADBA23B81B4EBA84A7E2B6 /* GPXDocument.swift */,
+				403E88B4A90699C00EEA6A34 /* AppModel.swift */,
+				9526182CCCDE7129D6A9B984 /* Components.swift */,
+				C672FF59A0F5D595BC0EACBF /* DiagnosticsView.swift */,
+				0482B7F6F9291FA868BEFC6D /* FavoritesView.swift */,
+				6BDF765405DB193D091E5C47 /* GeoLabApp.swift */,
+				C3EF2F842B4B5168EC4C1F19 /* GeoMapView.swift */,
+				F6E79682AEC250E700582AF1 /* LocationService.swift */,
+				A3A4CA52C512A33D8A37A31F /* Models.swift */,
+				9F7104BF3D9B877678F1FC16 /* SearchView.swift */,
+				197BD50E2686EA11E571EC20 /* SettingsView.swift */,
+			);
+			path = GeoLab;
+			sourceTree = "<group>";
+		};
+		19F74350A3298DCFC21DAB55 /* PBXGroup_products */ = {
+			isa = PBXGroup;
+			children = (
+				022E8DC6E527B2BEE97F7BD0 /* GeoLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E70500685151472F75026AFB /* PBXGroup_main */ = {
+			isa = PBXGroup;
+			children = (
+				1975FFFEC7AAD43CB4BA5649 /* GeoLab */,
+				19F74350A3298DCFC21DAB55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A850A52777E884CD1D2BA2C /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F200A0729EE393D3EEA432 /* Routes.swift in Sources */,
+				E66667263A94EE999F879176 /* RoutesView.swift in Sources */,
+				525128AB49CC8CAFEC1C779B /* GPXDocument.swift in Sources */,
+				8C3CACE923F976291CDC6893 /* AppModel.swift in Sources */,
+				5AAFC5604A2EE6B8CD9848A4 /* Components.swift in Sources */,
+				2E7FF4B2B3A4C397230572FC /* DiagnosticsView.swift in Sources */,
+				2845FCBDA5E16588AA11DAC0 /* FavoritesView.swift in Sources */,
+				050F3571E7D45874194838AD /* GeoLabApp.swift in Sources */,
+				FD6581B3517C5150258FE5B3 /* GeoMapView.swift in Sources */,
+				29BE544ADEA540B878C1A409 /* LocationService.swift in Sources */,
+				7948402356D47C29ADEB4409 /* Models.swift in Sources */,
+				28C27FF2D28868AD83F523AD /* SearchView.swift in Sources */,
+				87703538261691DD3DD7E624 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3D3F65E3D65D7ECEC9B39EC /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B013419629DCF57D4414DA3 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0FCB76D2ADA6D9F47C90FC /* PBXNativeTarget_GeoLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094E9FA35460B512CEB023C2 /* Build configuration list for PBXNativeTarget "GeoLab" */;
+			buildPhases = (
+				4A850A52777E884CD1D2BA2C /* Sources */,
+				1B013419629DCF57D4414DA3 /* Frameworks */,
+				A3D3F65E3D65D7ECEC9B39EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoLab;
+			productName = GeoLab;
+			productReference = 022E8DC6E527B2BEE97F7BD0 /* GeoLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF01027101F253A41B580C58 /* PBXProject */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = { 7B0FCB76D2ADA6D9F47C90FC = { CreatedOnToolsVersion = 16.0; }; };
+			};
+			buildConfigurationList = 70BFFB858A2B5B77D7ECC1DA /* Project config */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = ar;
+			hasScannedForEncodings = 0;
+			knownRegions = (ar, en, Base);
+			mainGroup = E70500685151472F75026AFB /* Main group */;
+			productRefGroup = 19F74350A3298DCFC21DAB55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (7B0FCB76D2ADA6D9F47C90FC /* GeoLab */);
+		};
+		19FEDCC2B2FF9DC356748E31 /* XCBuildConfiguration_Project_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EDC8231EEC2729EFD4B784C /* XCBuildConfiguration_Target_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "GeoLab Personal";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نحتاج إلى إذن الموقع لعرض بيانات GPS الحقيقية واختبار دقتها داخل التطبيق فقط.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.geolab.personal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F096C511574397E36EA607C /* XCBuildConfiguration_Project_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2A67ED1460E7569CB933648C /* XCBuildConfiguration_Target_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "GeoLab Personal";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نحتاج إلى إذن الموقع لعرض بيانات GPS الحقيقية واختبار دقتها داخل التطبيق فقط.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.geolab.personal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70BFFB858A2B5B77D7ECC1DA /* XCConfigurationList_Project */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FEDCC2B2FF9DC356748E31 /* Debug */,
+				3F096C511574397E36EA607C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094E9FA35460B512CEB023C2 /* XCConfigurationList_Target */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDC8231EEC2729EFD4B784C /* Debug */,
+				2A67ED1460E7569CB933648C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+	};
+	rootObject = AF01027101F253A41B580C58 /* Project object */;
+}
