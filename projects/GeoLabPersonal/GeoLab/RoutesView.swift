@@ -102,7 +102,7 @@ struct RoutesView: View {
             }
             .padding(.horizontal, 18).padding(.bottom, 24)
         }
-        .fileExporter(isPresented: $showExporter, document: $exportDocument,
+        .fileExporter(isPresented: $showExporter, document: exportDocument,
                       contentType: UTType(filenameExtension: "gpx") ?? .xml,
                       defaultFilename: "GeoLab-Route") { result in
             if case .failure(let error) = result { importError = error.localizedDescription }
