@@ -1,6 +1,8 @@
 import Foundation
 import CoreLocation
+#if canImport(FoundationXML)
 import FoundationXML
+#endif
 
 struct RouteWaypoint: Codable, Identifiable, Equatable {
     var id = UUID()
