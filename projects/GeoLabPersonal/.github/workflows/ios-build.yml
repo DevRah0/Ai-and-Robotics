@@ -5,15 +5,11 @@ on:
     branches: [main, geolab-personal-2026]
     paths:
       - 'projects/GeoLabPersonal/**'
-      - 'projects/GeoLabPersonal/**'
-      - 'projects/GeoLabPersonal/**'
-      - '.github/workflows/ios-build.yml'
+      - '.github/workflows/geolab-personal.yml'
   pull_request:
     paths:
       - 'projects/GeoLabPersonal/**'
-      - 'projects/GeoLabPersonal/**'
-      - 'projects/GeoLabPersonal/**'
-      - '.github/workflows/ios-build.yml'
+      - '.github/workflows/geolab-personal.yml'
   workflow_dispatch:
 
 permissions:
